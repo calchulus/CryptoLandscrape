@@ -1,6 +1,6 @@
 
 
-# [CryptoLandscrape](calchulus.github.io/CryptoLandscrape)
+# CryptoLandscrape [(Link)](https://calchulus.github.io/CryptoLandscrape)
 Painting a clearer picture of the crypto world using data scraping.
 ## Inspiration
 I've been learning Python in my CS course, and wanted to utilize my pandas & BeautifulSoup to gather some unique data on crypto projects and their github activities.
