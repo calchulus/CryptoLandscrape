@@ -3,6 +3,15 @@ Painting a clearer picture of the crypto world using data scraping.
 ## Inspiration
 I've been learning Python in my CS course, and wanted to utilize my pandas & BeautifulSoup to gather some unique data on crypto projects and their github activities.
 
+## Table of Contents
+github.csv contains outdated information from Cryptomiso.com
+social.py includes all of the messy code I used to gather this data
+full_diustance.csv is a complete correlation matrix of all 577 projects found on Github and how similar their descriptions were.
+average_distance.csv has a measure of how unique each of the project's descriptions were.
+uniqueness.csv excludes coins with no data (scores of 0)
+- Interesting phenomena can be found in this list - some of the oldest projects in theory should have least unique descriptions because forks and other minor projects are based off of them by nature, but yet bitcoin and other projects are still one of the lowest correlation factors with other projects
+- Meanwhile, industry focused projects might be more separate from the rest, and should score much lower, but not many reputable projects differed more from the crowd than the originals like Bitcoin and ETH Classic.
+
 ## What it does & What did I use?
 Using Cryptomiso.com for a list of github repositories (many projects are not listed under their official name), I use Beautiful Soup to gather information from each project's github website. 
 I then take in this text, and churn it through Python's Natural Language Processing Toolkit and a jaro-winkler distance function to uncover some similarity scores between different project's descriptions, 
@@ -12,6 +21,7 @@ Of course, this data wasn't in a neat dataset, so for many coins there is incomp
 
 ## Accomplishments that I'm proud of
 Getting around some rate limiting and other errors with GitHub's repo design (loading taking longer than the Beautiful Soup & the requests.get() call)
+Finding out how many things were bitcoin forks (answer: too many)
 
 ## What I learned
 I was able to uncover some really neat data on project activity to understand how open-source some of these projects are, as well as how similar some of these projects might be.
